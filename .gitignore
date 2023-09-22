@@ -12,3 +12,6 @@ package-lock.json
 !.gitignore
 !.npmignore
 !.travis.yml
+
+lib
+test

@@ -1,9 +1,0 @@
-{
-  "extends": [
-    "canonical/ava"
-  ],
-  "rules": {
-    "ava/no-cb-test": 0,
-    "id-length": 0
-  }
-}

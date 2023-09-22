@@ -1,18 +1,4 @@
 {
-  "ava": {
-    "babel": {
-      "compileAsTests": [
-        "test/helpers/**/*"
-      ]
-    },
-    "files": [
-      "test/swing/**/*"
-    ],
-    "require": [
-      "@babel/register",
-      "./test/helpers/setupBrowserEnvironment.js"
-    ]
-  },
   "author": {
     "email": "gajus@gajus.com",
     "name": "Gajus Kuizinas",
@@ -28,41 +14,22 @@
   },
   "description": "A swipeable cards interface. The swipe-left/swipe-right for yes/no input. As seen in apps like Jelly and Tinder.",
   "devDependencies": {
-    "@ava/babel": "^1.0.1",
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/node": "^7.8.7",
-    "@babel/preset-env": "^7.9.0",
-    "@babel/register": "^7.9.0",
-    "ava": "^3.6.0",
-    "babel-plugin-lodash": "^3.3.4",
-    "browser-env": "^3.3.0",
-    "eslint": "^6.8.0",
-    "eslint-config-canonical": "^19.0.4",
-    "husky": "^4.2.3",
-    "semantic-release": "^17.0.4",
-    "sinon": "^9.0.1"
+    "typescript": "^5.2.2"
   },
   "keywords": [
     "swipe",
     "cards"
   ],
   "license": "BSD-3-Clause",
-  "main": "./dist/index.js",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "name": "swing",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gajus/swing"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run test"
-    }
+    "url": "https://github.com/condecon/swing"
   },
   "scripts": {
-    "build": "babel ./src --out-dir ./dist --copy-files",
-    "lint": "eslint ./src ./test",
-    "test": "ava --verbose --serial"
+    "build": "tsc"
   },
-  "version": "3.1.0"
+  "version": "1.0.0"
 }
