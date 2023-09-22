@@ -5,9 +5,8 @@ import _ from "lodash";
  * Return direct children elements.
  * @see http://stackoverflow.com/a/27102446/368691
  * @param element 
- * @returns Array
  */
-export function elementChildren(element:HTMLElement):Array<object>{
+export function elementChildren(element:HTMLElement){
 	return _.filter(element.childNodes, {
 		nodeType: 1,
 	});
