@@ -54,11 +54,6 @@
     "type": "git",
     "url": "https://github.com/gajus/swing"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint && npm run test"
-    }
-  },
   "scripts": {
     "build": "babel ./src --out-dir ./dist --copy-files",
     "lint": "eslint ./src ./test",
