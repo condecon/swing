@@ -14,6 +14,9 @@
   },
   "description": "A swipeable cards interface. The swipe-left/swipe-right for yes/no input. As seen in apps like Jelly and Tinder.",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.49.0",
     "typescript": "^5.2.2"
   },
   "keywords": [
@@ -23,13 +26,15 @@
   "license": "BSD-3-Clause",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
+  "type": "module",
   "name": "swing",
   "repository": {
     "type": "git",
     "url": "https://github.com/condecon/swing"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "eslint src/**/*"
   },
   "version": "1.0.0"
 }
