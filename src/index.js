@@ -1,9 +1,9 @@
-import Card from './Card';
-import Direction from './Direction';
-import Stack from './Stack';
+import Card from "./Card";
+import Direction from "./Direction";
+import Stack from "./Stack";
 
 export {
-  Card,
-  Direction,
-  Stack,
+	Card,
+	Direction,
+	Stack,
 };

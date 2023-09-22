@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import _ from "lodash";
 
 /**
  * Return direct children elements.
@@ -8,9 +8,9 @@ import _ from 'lodash';
  * @returns {Array}
  */
 const elementChildren = (element) => {
-  return _.filter(element.childNodes, {
-    nodeType: 1,
-  });
+	return _.filter(element.childNodes, {
+		nodeType: 1,
+	});
 };
 
 /**
@@ -18,10 +18,10 @@ const elementChildren = (element) => {
  * @returns {boolean}
  */
 const isTouchDevice = () => {
-  return 'ontouchstart' in window || navigator.msMaxTouchPoints;
+	return "ontouchstart" in window || navigator.msMaxTouchPoints;
 };
 
 export {
-  elementChildren,
-  isTouchDevice,
+	elementChildren,
+	isTouchDevice,
 };
