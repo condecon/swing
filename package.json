@@ -37,7 +37,7 @@
     "ava": "^5.3.1",
     "babel-plugin-lodash": "^3.3.4",
     "browser-env": "^3.3.0",
-    "eslint": "^6.8.0",
+    "eslint": "^8.56.0",
     "eslint-config-canonical": "^19.0.4",
     "husky": "^4.2.3",
     "semantic-release": "^22.0.1",
